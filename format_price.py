@@ -12,11 +12,9 @@ def make_cmd_arguments_parser():
 
 def format_price(unformatted_price):
     with suppress(ValueError):
-        return '{:,}'.format(
-            int(
+        return '{:,.2f}'.format(
                 float(
                     unformatted_price.replace(',', '.')
-                )
             )
         ).replace(',', ' ')
 

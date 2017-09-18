@@ -9,7 +9,7 @@ Program have two interfaces:
 
 ```bash
 $ python3 format_price.py -p 1234567.00
-1 234 567
+1 234 567.00
 $ python3 tests.py # Test application with unittest
 OK
 Ran 3 tests in 0.0000s 
