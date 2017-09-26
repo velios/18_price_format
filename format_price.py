@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from contextlib import suppress
 
 
-def make_cmd_arguments_parser():
+def fetch_cmd_arguments():
     parser_description = 'Script takes unformatted price and format it'
     parser = ArgumentParser(description=parser_description)
     parser.add_argument('--price', '-p',
@@ -20,7 +20,7 @@ def format_price(unformatted_price):
 
 
 if __name__ == '__main__':
-    cmd_arguments = make_cmd_arguments_parser()
+    cmd_arguments = fetch_cmd_arguments()
     unformatted_price = cmd_arguments.price
     if unformatted_price:
         print(format_price(unformatted_price))

@@ -5,7 +5,7 @@ Program have two interfaces:
 * API - for use in site
 * command line - for use from command line
 
-### How to Install
+### How to Use
 
 
 ##### Use from command line
